@@ -1,3 +1,26 @@
+MyToken Smart Contract
+
+
+This Solidity smart contract "MyToken" is a basic ERC20-like token. The contract allows for minting and burning of tokens, and keeps track of balances associated with addresses.
+
+Prerequisites
+
+Solidity compiler version: 0.8.26
+
+
+Description
+
+
+The MyToken contract is written in Solidity, a programming language specifically designed for developing smart contracts on the Ethereum blockchain. This contract includes public variables to store details about the token, a mapping to keep track of balances, and functions to mint and burn tokens. This program serves as an introductory example to help you understand how to create and manage a custom token.
+
+
+Getting Started
+
+Executing program
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., ETHProof.sol). Copy and paste the following code into the file:
+
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
@@ -40,3 +63,31 @@ contract MyToken {
     }
 
 }
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.26" (or another compatible version), and then click on the "Compile ETHProof.sol" button.
+
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyToken" contract from the dropdown menu, and then click on the "Deploy" button.
+
+Once the contract is deployed, you can interact with it by calling the mint and burn function. Click on the "MyToken" contract in the left-hand sidebar, and then click on the "mint" and "burn" function.
+
+
+Explaination
+
+
+mint Function
+It takes two parameters: an address (_address) and a value (_value).
+
+It increases the totalSupply by the amount specified in val.
+
+It also increases the balance of the address _address by the same amount.
+
+burn Function
+It takes two parameters: an address (_address) and a value (_value).
+
+It first checks if the balance of the address _address is greater than or equal to the amount specified in _value.
+
+If the condition is met, it decreases the totalSupply by the amount specified in _value.
+
+It also decreases the balance of the address _address by the same amount.
+
+License
+This README.md provides an overview of the smart contract, details its features, explains how to use the mint and burn functions, and includes a section on checking balances. It also notes that the project is licensed under the MIT License.
