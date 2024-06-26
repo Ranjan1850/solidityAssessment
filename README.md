@@ -1,22 +1,23 @@
-MyToken Smart Contract
+# MyToken Smart Contract
 
 
 This Solidity smart contract "MyToken" is a basic ERC20-like token. The contract allows for minting and burning of tokens, and keeps track of balances associated with addresses.
 
-Prerequisites
+# Prerequisites
 
 Solidity compiler version: 0.8.26
 
 
-Description
+# Description
 
 
 The MyToken contract is written in Solidity, a programming language specifically designed for developing smart contracts on the Ethereum blockchain. This contract includes public variables to store details about the token, a mapping to keep track of balances, and functions to mint and burn tokens. This program serves as an introductory example to help you understand how to create and manage a custom token.
 
 
-Getting Started
+# Getting Started
 
-Executing program
+#Executing program
+
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., ETHProof.sol). Copy and paste the following code into the file:
@@ -70,7 +71,7 @@ Once the code is compiled, you can deploy the contract by clicking on the "Deplo
 Once the contract is deployed, you can interact with it by calling the mint and burn function. Click on the "MyToken" contract in the left-hand sidebar, and then click on the "mint" and "burn" function.
 
 
-Explaination
+# Explaination
 
 
 mint Function
